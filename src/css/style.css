@@ -25,6 +25,14 @@
     color: white;
     
 }
+.nav_right a{
+ text-decoration: none;
+ color: white;
+ transition: 1s;
+}
+.nav_stiky a:hover{
+  color: var(--green);
+}
 p{
     font-size: 20px;
 }
@@ -191,7 +199,7 @@ header .header_div_right>div{
   }
 
   section{
-    margin: 100px 0px;
+    margin: 250px 0px;
   }
 
   main{
@@ -208,7 +216,7 @@ header .header_div_right>div{
   .features_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 120px;
+    grid-gap: 120px 0px;
 
   }
   
@@ -251,4 +259,125 @@ header .header_div_right>div{
     width: 100%;
     color: white;
   }
-  
+  .description{
+    display: flex;
+  }
+  .description>div{
+    width: 49%;
+    display: inline-block;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+
+  .description>div>h2{
+    margin: 0px 0px 28px 0px;
+  }
+
+  .clients_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 120px 0px;
+
+  }
+
+  .clients_grid *{
+    margin: auto;
+    width: 200px;
+  }
+
+  .products_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 120px 0px;
+  }
+
+  .products_grid>div{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .products_grid_card_active{
+    background-image: url(https://thumbs.dreamstime.com/z/fondo-geom%C3%A9trico-de-los-tri%C3%A1ngulos-abstractos-de-la-prisma-76500263.jpg);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .products_grid_card_active{
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .products_grid_card_hover{
+    vertical-align: bottom;
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    margin: 0px 0px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--black);
+    transition: 1s;
+    text-align: center;
+    color: var(--green);
+    overflow: hidden;
+  }
+
+  .products_grid_card_active:hover ~ .products_grid_card_hover{
+    height: 200px;
+    margin: -200px 0px;
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  .products_grid_card_hover:hover{
+    height: 200px;
+    margin: -200px 0px;
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  footer{
+    background-color: var(--black);
+    padding: 90px calc(15% / 2) 5px calc(15% / 2);
+    color: white;
+  }
+  footer>p{
+    margin: 0px;
+  }
+  footer h2{
+    font-size: 100px;
+    margin: 0px 0px 80px 0px;
+    font-weight: bolder;
+    letter-spacing: -5px;
+    color: var(--green);
+  }
+
+  footer>button{
+    margin: 15px 0px;
+    padding: 10px 40px;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--green);  
+    background-color: var(--black);
+    border:3px solid var(--green);
+}
+.footer_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 80px 0px;
+}
+
+.footer_grid>p{
+margin: 5px;
+}
+
+.footer_credits *{
+  font-size: 16px;
+  color: var(--green);
+}
