@@ -388,3 +388,13 @@ margin: 5px;
   font-size: 16px;
   color: var(--green);
 }
+
+@media (max-width:800px) {
+  .clients_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
