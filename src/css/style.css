@@ -36,7 +36,7 @@
 p{
     font-size: 20px;
 }
-.nav_left{
+.nav_left img{
 
 }
 
@@ -65,14 +65,17 @@ header .header_div_left{
     width: 40px;
 }
 
-header .header_div_left *{
+header .header_div_left img{
     width: 40px;
+    height: 40px;
     margin: 10px 0px;
+    filter: invert(100%);
 }
 header .header_div_center{
 text-align: center;
 color: white;
 }
+/*
 header .header_div_center>div>h1{
     margin: 20px;
     display: inline-block;
@@ -114,7 +117,11 @@ header .header_div_center>div>:nth-child(4){
 
 
 
+*/
 
+header .header_div_center>div>img{
+  width: 100%;
+}
 header .header_div_center>button{
     margin: 15px;
     padding: 10px 40px;
